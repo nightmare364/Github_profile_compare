@@ -18,12 +18,12 @@ const SearchCard = (props) =>{
 
 
     const [userInput,setuserInput]=useState('');
-    const setData = ({ name, login, url, followers, following, public_repos, avatar_url }) => {
+    const setData = ({ name, login, html_url, followers, following, public_repos, avatar_url }) => {
         setuserData(()=>{
             return {
                 Name: name,
                 userName: login,
-                userurl: url,
+                userurl: html_url,
                 followers: followers,
                 following: following,
                 repos: public_repos,

@@ -13,7 +13,7 @@ const CreateCard = (props) =>{
                         <Card.Header>{ordinal(props.id+1)} {props.Name}</Card.Header>
                     </Card.Content>
                     <Card.Content extra>
-                        <a href={props.userurl}> 
+                        <a href={props.userurl} target="_blank" rel="noopener noreferrer"> 
                             <Icon name='user' />
                             {props.userName}
                         </a>
